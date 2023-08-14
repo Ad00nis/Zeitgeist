@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>portfolio</title>
+<style>
+body {
+  font-family: cursive;
+  background-image: url("../images/back.jpeg");
+  background-position: center;
+background-size: cover;
+  background-attachment: fixed;
+  /*background-repeat: no-repeat;
+  background-size: cover;*/
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+header {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+      margin: 1ex 1em;
+      position: sticky;
+		}
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+      font-style: italic;
+    font-family: cursive;
+    background: linear-gradient(to right, rgb(67, 124, 105), rgb(67, 124, 205));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+		}
+		nav {
+			display: none;
+		}
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+		nav li {
+			margin: 0 10px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 5px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+		nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+		@media (min-width: 768px) {
+			nav {
+				display: block;
+			}
+			header {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+			nav ul {
+				flex-direction: row;
+			}
+			nav li {
+				margin: 0 20px;
+			}
+		}
+
+h1{
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+  background-color: powderblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+input:focus{
+  background-color: #f2f2f2;
+}
+
+.containerr{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.columnn {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  position: relative;
+  transform: scale(1.0);
+  transition: 5s;
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  font-variant: small-caps;
+}
+.columnn:hover .overlay {
+  opacity: 1;
+  transform: scale(1.03);
+
+}
+
+.textt {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .columnn, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+a{
+    text-decoration: none;
+    color: black;
+   
+    
+
+}
+a:hover{
+    color: white;
+}
+
+.copyright-text{
+  background-color: grey;
+  text-align: center;
+}
+
+
+
+</style>
+<header>
+  <div class="logo"><a href=home.html>Zeitgeist</a></div>
+  <nav>
+    <ul>
+      <li><a href="../webpages/home.html">Home</a></li>
+      <li><a href="../webpages/services.html">Services</a></li>
+      <li style="font-size: 1.4rem;"><a href="../webpages/register.html">Register</a></li>
+      <li><a href="../webpages/about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+</head>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body>
+
+<h1 style="text-align: center;">Register with us today</h1>
+
+
+<div class="containerr" style="margin: 1ex 1em;">
+  <div style="text-align:center">
+    <h2>Register</h2>
+    <p>register to buy an artwork, or leave us a message:</p>
+  </div>
+  <div class="roww">
+    <div class="columnn">
+      <img src="../images/painting.png" style="width:90%">
+        
+      <div class="overlay">
+        <div class="textt"><b>you can also join our art training bootcamp</b></div>
+      </div>
+      
+    </div>
+    <div class="columnn">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="uruguay">Uruguay</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="scotland">Scotland</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="argentina">Argentina</option>
+          <option value="qatar">Qatar</option>
+          <option value="finland">Finland</option>
+          <option value="Wales">Wales</option>
+          <option value="portugal">Portugal</option>
+          <option value="Spain">Spain</option>
+          <option value="Southafrica">South Africa</option>
+          <option value="china">China</option>
+          <option value="germany">Germany</option>
+          <option value="australia">Austraila</option>
+          <option value="saudiarabia">Saudi Arabia</option>
+          <option value="available">Not available in your country</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Register to buy from us today" style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+<p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+  <a href="#">Zeitgeist</a>. </p>
+
+</html>

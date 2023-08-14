@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>our services</title>
+  </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+header {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+      margin: 1ex 1em;
+      position: sticky;
+		}
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+      font-style: italic;
+    font-family: cursive;
+    background: linear-gradient(to right, rgb(67, 124, 105), rgb(67, 124, 205));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+		}
+		nav {
+			display: none;
+		}
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+		nav li {
+			margin: 0 10px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 5px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+		nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+		@media (min-width: 768px) {
+			nav {
+				display: block;
+			}
+			header {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+			nav ul {
+				flex-direction: row;
+			}
+			nav li {
+				margin: 0 20px;
+			}
+		}
+
+body {
+  margin: 0;
+  background-image: url("../images/back.jpeg");
+  background-position: center;
+background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+  font-family: cursive;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+   
+    /*position: sticky;*/
+
+}
+a:hover{
+    color: white;
+}
+
+p{
+    text-align: left;
+    /*border: 2px solid gray;*/
+    text-align: center;
+    font-size: 1em;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+    font-family: cursive;
+    
+}
+.hide{
+    display: inline-block;
+}
+
+.but{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  float: right;
+  
+
+}
+
+.header {
+  text-align: center;
+  font-size: 2em;
+  padding: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 5px 7px 5px black;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  
+ 
+}
+
+
+
+img{
+  transform: scale(0.97);
+  transition: 0.3s;
+  opacity: 0.9;
+  filter: blur(0.8px);
+  box-shadow: 0 0 5px 0 black;
+  
+  
+}
+img:hover{
+  transform: scale(1.0);
+  opacity: 1;
+  filter: blur(0);
+}
+
+/*two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+
+
+<header>
+  <div class="logo"><a href=home.html>Zeitgeist</a></div>
+  <nav>
+    <ul>
+      <li><a href="../webpages/home.html">Home</a></li>
+      <li style="font-size: 1.4rem;"><a href="../webpages/services.html">Services</a></li>
+      <li><a href="../webpages/register.html">Register</a></li>
+      <li><a href="../webpages/about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+<br>
+
+
+
+<div class="header">
+
+
+
+
+ <h1>portfolio</h1>
+  
+</div>
+
+<!-- Photo Grid -->
+
+<div class="row"> 
+  <div class="column">
+    <p><a href="picture1.html"><img src="../images/logo.jpeg" style="width:100%;"></a><b class="hide">Red heart</b> <button class="hide but">$24.99</button></p>
+   <p><a href="picture2.html"><img src="../images/rose.jpeg" style="width:100%"></a><b class="hide">Black rose</b><button class="hide but">$20.99</button></p>
+    <p><a href="picture3.html"><img src="../images/11.jpeg" style="width:100%"></a><b class="hide">Stoicism</b><button class="hide but">$18.99</button></p>
+    <p><a href="picture4.html"><img src="../images/12.jpeg"style="width:100%"></a><b class="hide">Lost in translation</b><button class="hide but">$26.99</button></p>
+    <p><a href="picture5.html"><img src="../images/13.jpeg" style="width:100%"></a><b class="hide">Astronaut in space</b><button class="hide but">$10.99</button></p>
+    <p><a href="picture6.html"><img src="../images/14.jpeg" style="width:100%"></a><b class="hide">Fireflies in a jar</b><button class="hide but">$24.99</button></p>
+    <p><a href="picture7.html"><img src="../images/15.jpeg" style="width:100%"></a><b class="hide">Parental Advisory</b><button class="hide but">$12.99</button></p>
+  </div>
+
+  
+  <div class="column">
+    <p><a href="picture8.html"><img src="../images/bubble.jpeg" style="width:100%"></a><b class="hide">sea rocks</b><button class="hide but">$10.99</button></p>
+    <p><a href="picture9.html"><img src="../images/1.jpeg" style="width:100%"></a><b class="hide">Checking texts</b><button class="hide but">$20.99</button></p>
+    <p><a href="picture10.html"><img src="../images/2.png" style="width:100%"></a><b class="hide">Young love</b><button class="hide but">$20.99</button></p>
+    <p><a href="picture11.html"><img src="../images/3.jpeg" style="width:100%"></a><b class="hide">Dreams in a jar</b><button class="hide but">$16.99</button></p>
+    <p><a href="picture12.html"><img src="../images/4.jpeg" style="width:100%"></a><b class="hide">Japanese style wave</b><button class="hide but">$17.99</button></p>
+    <p><a href="picture13.html"><img src="../images/5.jpeg" style="width:100%"></a><b class="hide">Beautiful moon</b><button class="hide but">$17.99</button></p>
+    <p><a href="picture14.html"><img src="../images/6.jpeg" style="width:100%"></a><b class="hide">Arcade</b><button class="hide but">$27.99</button></p>
+  </div> 
+   
+  <div class="column">
+    <p><a href="picture15.html"><img src="../images/21.jpeg" style="width:100%"></a><b class="hide">Psychedelic</b><button class="hide but">$30.99</button></p>
+    <p><a href="picture16.html"><img src="../images/22.jpeg" style="width:100%"></a><b class="hide">Weird</b><button class="hide but">$30.99</button></p>
+    <p><a href="picture17.html"><img src="../images/23.jpeg" style="width:100%"></a><b class="hide">Road trip</b><button class="hide but">$26.99</button></p>
+    <p><a href="picture18.html"><img src="../images/24.jpeg" style="width:100%"></a><b class="hide">Mixtapes</b><button class="hide but">$28.99</button></p>
+    <p><a href="picture19.html"><img src="../images/25.jpeg" style="width:100%"></a><b class="hide">Till death</b><button class="hide but">$28.99</button></p>
+    <p><a href="picture20.html"><img src="../images/26.jpeg" style="width:100%"></a><b class="hide">Beautiful sunset</b><button class="hide but">$20.99</button></p>
+    <p><a href="picture21.html"><img src="../images/27.jpeg" style="width:100%"></a><b class="hide">A deer</b><button class="hide but">$8.99</button></p>
+  </div>
+  
+  <div class="column">
+    <p><a href="picture22.html"><img src="../images/31.png" style="width:100%"></a><b class="hide">An Atom</b><button class="hide but">$8.99</button></p>
+    <p><a href="picture23.html"><img src="../images/32.jpeg" style="width:100%"></a><b class="hide">Love Aesthetics</b><button class="hide but">$40.99</button></p>
+    <p><a href="picture24.html"><img src="../images/33.jpeg" style="width:100%"></a><b class="hide">Milkyway</b><button class="hide but">$18.99</button></p>
+    <p><a href="picture25.html"><img src="../images/34.jpeg" style="width:100%"></a><b class="hide">Beautiful Toronto</b><button class="hide but">$26.99</button></p>
+    <p> <a href="picture26.html"><img src="../images/35.png" style="width:100%"></a><b class="hide">Stairway to heaven</b><button class="hide but">$28.99</button></p>
+    <p> <a href="picture27.html"><img src="../images/36.png" style="width:100%"></a><b class="hide">Golden steps</b><button class="hide but">$38.99</button></p>
+    <p> <a href="picture28.html"><img src="../images/37.jpeg" style="width:100%"></a><b class="hide">Summer's coming</b><button class="hide but">$20.99</button></p>
+  </div>
+
+</div>
+
+
+</body>
+
+<p style="border: none; text-align: center; background-color: gray; color: #fff;" class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+  <a href="#">Zeitgeist</a>. </p>
+
+</html>
+
+
